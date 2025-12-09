@@ -4,7 +4,8 @@ import "./index.css";
 const App = () => {
   return (
     <div>
-      <h1 className="text-3xl font-bold underline">Hello, Tailwind CSS!</h1>
+      <h1 className="title">Hello, everyone!</h1>
+      <p className="Subtitle">Welcome to my React application.</p>
     </div>
   );
 };
