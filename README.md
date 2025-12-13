@@ -32,13 +32,4 @@ I created this portfolio to showcase my work and skills. I am passionate about b
 ![VS Code](https://img.shields.io/badge/-VS_Code-007ACC?style=flat&logo=visual-studio-code&logoColor=white)
 
 ---
-
-## 🚀 Key Features
-
-* **Responsive Design:** Works seamlessly on desktop, tablet, and mobile.
-* **Dark Mode:** Easy on the eyes for late-night browsing.
-* **Project Showcase:** Detailed views of my top projects with links to source code.
-* **Contact Form:** Integrated with [e.g., EmailJS / Formspree] for easy communication.
-
----
    
