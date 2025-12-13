@@ -7,18 +7,20 @@ const App = () => {
     <div>
       <h1 className="title">Hello, everyone!</h1>
       <p className="Subtitle">Welcome to my React application.</p>
+      <div className="flex h-screen ">
       <img
-        className="image"
+        className="image w-auto h-auto"
         src="/About.png"
         alt="Placeholder"
       />
       <img
-        className="image"
+        className="image w-auto h-auto"
         src="/2.png"
         alt="Placeholder"
       />
+      </div>
 
-      <About />
+      {/* <About /> */}
     </div>
   );
 };
