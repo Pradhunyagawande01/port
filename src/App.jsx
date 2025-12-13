@@ -1,5 +1,6 @@
 import React from "react";
 import "./index.css";
+import About from "./pages/About.jsx";
 
 const App = () => {
   return (
@@ -16,6 +17,8 @@ const App = () => {
         src="/2.png"
         alt="Placeholder"
       />
+
+      <About />
     </div>
   );
 };
