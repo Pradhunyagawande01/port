@@ -10,8 +10,8 @@ import Links from "./Pages/Links";
 export default function App() {
   return (
     <Router>
-      <div className="min-h-screen ">
-        <Navbar />
+      <div className=" ">
+        <Navbar className="flex items-center justify-center" />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />

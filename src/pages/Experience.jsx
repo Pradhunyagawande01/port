@@ -2,8 +2,8 @@ import React from 'react'
 
 const Experience = () => {
   return (
-    <div>
-      Experience
+    <div className="pt-6 ">
+      <div className="title">Experience</div>
     </div>
   )
 }

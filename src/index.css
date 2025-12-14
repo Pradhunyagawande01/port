@@ -5,6 +5,17 @@ body {
   font-family: Arial, sans-serif;
   background: #fdf0d5;
   color: #61210f;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE & Edge */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+/* Optional: smooth scrolling */
+html {
+  scroll-behavior: smooth;
 }
 
 .title {
@@ -13,7 +24,7 @@ body {
   font-style: normal;
   font-size: 3rem;
   text-align: center;
-  margin-top: 2rem; 
+  margin-top: 2rem;
 }
 
 .Subtitle {
@@ -23,6 +34,4 @@ body {
   font-style: normal;
   font-size: 1.5rem;
   text-align: center;
-  margin-top: 1rem;
-  
 }

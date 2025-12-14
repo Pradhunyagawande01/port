@@ -1,13 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Home = () => {
   return (
-    <div className='pt-6 '>
-      <div className='title'>
-      Home
+    <div className="pt-6 ">
+      <div className="title">Home</div>
     </div>
-    </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
