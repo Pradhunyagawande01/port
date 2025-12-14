@@ -27,5 +27,4 @@ I created this portfolio to showcase my work and skills. I am passionate about b
 ![React](https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=black)
 ![Tailwind CSS](https://img.shields.io/badge/-TailwindCSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)
 
----
-   
+
