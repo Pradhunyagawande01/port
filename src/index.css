@@ -3,27 +3,30 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #fdf0d5;
-  color: #61210f;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE & Edge */
+  background: #fefff0;
+  color: #000000;
 }
 
-body::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
+.wrapper {
+  max-width:1400px;
+  margin: 0 auto;
+  padding: 1.50rem 1.5rem;
 }
 
-/* Optional: smooth scrolling */
-html {
-  scroll-behavior: smooth;
+.Signature {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5rem;
 }
 
 .title {
-  font-family: "Nova Cut", system-ui;
-  font-weight: 800;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
   font-style: normal;
-  font-size: 3rem;
-  text-align: center;
+  font-size: 3.5rem;
+  /* text-align: center; */
   margin-top: 2rem;
 }
 
@@ -32,6 +35,18 @@ html {
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  font-size: 1.5rem;
-  text-align: center;
+  font-size: 1.4rem;
+  /* text-align: center; */
+  
+}
+
+.title2 {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+  /* text-align: center; */
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  
 }

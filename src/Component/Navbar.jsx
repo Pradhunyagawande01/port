@@ -7,7 +7,11 @@ export default function Navbar() {
 
   useEffect(() => {
     // Set active page based on current URL
-    setActivePage(window.location.pathname);
+    const timer = setTimeout(() => {
+      setActivePage(window.location.pathname);
+    }, 0);
+    
+    return () => clearTimeout(timer);
   }, []);
 
   const navLinks = [
@@ -21,13 +25,13 @@ export default function Navbar() {
 
   return (
     <div className="pb-10">
-      <nav className="fixed w-full bg-transparent backdrop-blur-3xl p-4">
+      <nav className="fixed w-full bg-transparent p-4">
         <div className="max-w-7xl mx-auto">
-          <div className=" border-2 border-black p-3 shadow-lg hover:shadow-[5px_5px_0px_0px_rgb(0,0,0)] transition-shadow duration-300">
+          <div className=" border-2 border-black p-3 shadow-lg hover:shadow-[5px_5px_0px_0px_rgb(0,0,0)] transition-shadow duration-300 backdrop-blur-3xl">
             <div className="flex justify-between items-center">
               {/* Logo/Brand */}
               <div className="flex items-center gap-2 px-4 py-2 font-bold text-lg">
-                <a href="/" className=" Subtitle transition-opacity">
+                <a href="/" className=" Signature font-bold transition-opacity">
                   Pradhunya Gawande
                 </a>
               </div>
