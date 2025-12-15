@@ -1,5 +1,6 @@
 import React from "react";
 import { Award, ExternalLink } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const Home = () => {
   return (
@@ -34,76 +35,62 @@ const Home = () => {
         <div className="">
           <div className="">
             <div>
-              <h1 className="title2 underline">My Achievements !</h1>
+              <h1 className="title2 underline">My Work!</h1>
             </div>
-            <div className="">
-              {/* Content */}
-              <div className="flex gap-4 border-t-2 border-black w-full height-full
-               mt-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <div className=" ">
-                  <img
-                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop"
-                    alt="CodeHunt Winner"
-                    className="w-full h-full object-cover"
+            <div className="grid grid-cols-6 grid-rows-6 gap-[6px] h-screen mt-6">
+              <div className="rounded-4xl col-start-4 row-start-1 col-span-3 row-span-3 border-2 border-black text-black flex items-center justify-center overflow-hidden">
+                <img src="/h4b.jpg" alt="Hack4Brahma" className="h-[550px]" />
+              </div>
+
+              <div className=" Subtitle col-start-1 row-start-2 col-span-3 row-span-2 text-black align-middle flex flex-col gap-8 items-center justify-center">
+                <p className="text-center">
+                  Hack4Brahma is a student-led hackathon that promotes
+                  innovation and hands-on problem solving. It brings together
+                  developers and designers to build real-world solutions using
+                  modern technologies. The event focuses on learning,
+                  collaboration, and community building.
+                </p>
+                <a
+                  href="/events"
+                  className="group flex items-center gap-2 rounded-full border border-black/30 px-6 py-2 text-sm font-medium black backdrop-blur-md transition-all duration-300 hover:bg-white hover:text-black"
+                >
+                  Know More
+                  <ArrowRight
+                    size={16}
+                    className="transition-transform duration-300 group-hover:translate-x-1"
                   />
-                </div>
+                </a>
+              </div>
 
-                {/* Text Section */}
-                <div className=" p-8 flex flex-col justify-between">
-                  {/* Badge and Title */}
-                  <div>
-                    <div className="flex items-center gap-2 mb-4">
-                      <Award size={24} className="text-yellow-600" />
-                      <h2 className="text-2xl font-bold text-black">
-                        CodeHunt Winner
-                      </h2>
-                    </div>
+              <div className="col-start-1 row-start-1 col-span-3 text-black flex items-center justify-center">
+                <h1 className="title">Hack4Brahma</h1>
+              </div>
 
-                    {/* Description */}
-                    <p className="text-gray-700 text-sm mb-6 leading-relaxed">
-                      Won the CodeHunt Hackathon by building an innovative
-                      project within 24 hours, standing out among 200+
-                      participants for its creativity, execution, and impact.
-                    </p>
+              <div className="col-start-4 row-start-4 col-span-3  text-black flex items-center justify-center">
+                <h1 className="title">CodeHunt</h1>
+              </div>
 
-                    {/* Highlights */}
-                    <div className="space-y-3">
-                      <div className="flex items-start gap-3">
-                        <div className="w-5 h-5 rounded-full border-2 border-black flex-shrink-0 mt-0.5" />
-                        <p className="text-gray-700 text-sm">
-                          Secured 1st place out of 200+ participants
-                        </p>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <div className="w-5 h-5 rounded-full border-2 border-black flex-shrink-0 mt-0.5" />
-                        <p className="text-gray-700 text-sm">
-                          Developed a complete and functional project in just 24
-                          hours
-                        </p>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <div className="w-5 h-5 rounded-full border-2 border-black flex-shrink-0 mt-0.5" />
-                        <p className="text-gray-700 text-sm">
-                          Recognized for technical excellence and
-                          problem-solving approach
-                        </p>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <div className="w-5 h-5 rounded-full border-2 border-black flex-shrink-0 mt-0.5" />
-                        <p className="text-gray-700 text-sm">
-                          Delivered a compelling pitch that impressed the
-                          judging panel
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+              <div className="Subtitle col-start-4 row-start-5 col-span-3 row-span-2  text-black gap-8 flex-col flex items-center justify-center">
+                <p className="text-center">
+                  CodeHunt is a community driven hackathon that brings together
+                  developers, designers, and innovators to build impactful,
+                  real-world solutions. It emphasizes creativity, collaboration,
+                  hands-on learning, and growth through mentorship and teamwork.
+                </p>
+                <a
+                  href="/events"
+                  className="group flex items-center gap-2 rounded-full border border-black/30 px-6 py-2 text-sm font-medium black backdrop-blur-md transition-all duration-300 hover:bg-white hover:text-black"
+                >
+                  Know More
+                  <ArrowRight
+                    size={16}
+                    className="transition-transform duration-300 group-hover:translate-x-1"
+                  />
+                </a>
+              </div>
 
-                  {/* CTA Button */}
-                  <button className="mt-6 bg-yellow-200 border-2 border-black px-6 py-3 font-semibold text-black hover:bg-yellow-300 transition flex items-center justify-center gap-2 w-full">
-                    View Achievement
-                    <ExternalLink size={18} />
-                  </button>
-                </div>
+              <div className="rounded-4xl col-start-1 row-start-4 col-span-3 row-span-3 border-2 border-black overflow-hidden text-black flex items-center justify-center">
+                <img src="/CH.jpg" alt="CodeHunt" className="h-[670px]" />
               </div>
             </div>
           </div>
