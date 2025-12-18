@@ -6,6 +6,7 @@ import Skills from "./Pages/Skills";
 import Experience from "./Pages/Experience";
 import Events from "./Pages/Events";
 import Links from "./Pages/Links";
+import Footer from "./Component/Footer";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
           <Route path="/events" element={<Events />} />
           <Route path="/links" element={<Links />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

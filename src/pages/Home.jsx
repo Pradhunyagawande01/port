@@ -101,8 +101,8 @@ const Home = () => {
               <h1 className="title2 underline">My Achivments!</h1>
             </div>
             <div className=" flex items-center justify-center pt-10 ">
-              <div className="grid grid-cols-2 gap-12 border-2 border-black p-6">
-                <div className="">
+              <div className="grid grid-cols-2 gap-12 border-2 border-black ">
+                <div className="border-r-2 border-black">
                   <img
                     src="/Winner.jpg"
                     alt="Achievements"
