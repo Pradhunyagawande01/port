@@ -32,7 +32,7 @@ const Home = () => {
             <img src="/About.png" alt="Description" className="h-[500px]" />
           </div>
         </div>
-        <div className="">
+        <div className="section 2">
           <div className="">
             <div>
               <h1 className="title2 underline">My Work!</h1>
@@ -52,7 +52,7 @@ const Home = () => {
                 </p>
                 <a
                   href="/events"
-                  className="group flex items-center gap-2 rounded-full border border-black/30 px-6 py-2 text-sm font-medium black backdrop-blur-md transition-all duration-300 hover:bg-white hover:text-black"
+                  className="Signature group flex items-center gap-2 rounded-full border border-black/30 px-6 py-2 text-sm font-medium black backdrop-blur-md transition-all duration-300 hover:bg-white hover:text-black"
                 >
                   Know More
                   <ArrowRight
@@ -79,7 +79,7 @@ const Home = () => {
                 </p>
                 <a
                   href="/events"
-                  className="group flex items-center gap-2 rounded-full border border-black/30 px-6 py-2 text-sm font-medium black backdrop-blur-md transition-all duration-300 hover:bg-white hover:text-black"
+                  className="Signature group flex items-center gap-2 rounded-full border border-black/30 px-6 py-2 text-sm font-medium black backdrop-blur-md transition-all duration-300 hover:bg-white hover:text-black"
                 >
                   Know More
                   <ArrowRight
@@ -91,6 +91,35 @@ const Home = () => {
 
               <div className="rounded-4xl col-start-1 row-start-4 col-span-3 row-span-3 border-2 border-black overflow-hidden text-black flex items-center justify-center">
                 <img src="/CH.jpg" alt="CodeHunt" className="h-[670px]" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="section 3">
+          <div className="">
+            <div className="pt-20 flex items-center justify-end text-left">
+              <h1 className="title2 underline">My Achivments!</h1>
+            </div>
+            <div className=" flex items-center justify-center pt-10 ">
+              <div className="grid grid-cols-2 gap-12 border-2 border-black p-6">
+                <div className="">
+                  <img
+                    src="/Winner.jpg"
+                    alt="Achievements"
+                    className="object-cover"
+                  />
+                </div>
+                <div className="">
+                  <h1 className="title2 underline ">
+                    <Award size={32} className="inline-block mr-2" /> Hackathon
+                    Winner
+                  </h1>
+                  <div className="Subtitle">
+                   
+                  
+                  
+                  </div>
+                </div>
               </div>
             </div>
           </div>
