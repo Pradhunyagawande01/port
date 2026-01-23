@@ -11,16 +11,23 @@ import Footer from "./Component/Footer";
 export default function App() {
   return (
     <Router>
-      <div className=" ">
-        <Navbar className="flex items-center justify-center" />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/events" element={<Events />} />
-          <Route path="/links" element={<Links />} />
-        </Routes>
+      <div>
+        {/* Top navigation */}
+       <Navbar className="flex items-center justify-center" />
+
+        {/* Page content */}
+        <main className="flex-1">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/events" element={<Events />} />
+            <Route path="/links" element={<Links />} />
+          </Routes>
+        </main>
+
+        {/* Global footer */}
         <Footer />
       </div>
     </Router>
