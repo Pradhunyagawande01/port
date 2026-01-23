@@ -1,11 +1,11 @@
 import Navbar from "./Component/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./Pages/Home";
-import Services from "./Pages/Services";
-import Skills from "./Pages/Skills";
-import Experience from "./Pages/Experience";
-import Events from "./Pages/Events";
-import Links from "./Pages/Links";
+import Home from "./pages/Home";
+import Services from "./pages/Services";
+import Skills from "./pages/Skills";
+import Experience from "./pages/Experience";
+import Events from "./pages/Events";
+import Links from "./pages/Links";
 import Footer from "./Component/Footer";
 
 export default function App() {
