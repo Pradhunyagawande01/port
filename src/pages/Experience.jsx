@@ -113,9 +113,9 @@ const Experience = () => {
           </div>
 
           {/* Timeline layout */}
-          <div className="relative">
+          <div className="">
             {/* Vertical line on desktop */}
-            <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-black/20" />
+            <div className="hidden md:block left-1/2 top-0 bottom-0 w-px bg-black/20" />
 
             <div className="space-y-8 md:space-y-10">
               {experiences.map((exp, index) => {
@@ -135,7 +135,7 @@ const Experience = () => {
 
                     {/* Card */}
                     <div
-                      className={`relative rounded-2xl border-2 border-black bg-white text-black p-6 md:p-7 flex flex-col gap-3 md:gap-4 ${
+                      className={` rounded-2xl border-2 border-black bg-white text-black p-6 md:p-7 flex flex-col gap-3 md:gap-4 ${
                         isLeft ? "" : "md:order-1"
                       }`}
                     >

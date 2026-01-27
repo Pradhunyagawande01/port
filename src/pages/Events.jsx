@@ -88,19 +88,18 @@ const Events = () => {
 
           {/* Highlight card */}
           <div className="flex items-center justify-center">
-            <div className="w-full md:w-[420px] lg:w-[460px] rounded-2xl border-2 border-black bg-white text-black p-6 md:p-8 space-y-5 relative overflow-hidden">
-              <div className="absolute -right-6 -top-6 w-24 h-24 rounded-full bg-black/5" />
-              <div className="absolute -left-10 bottom-0 w-32 h-32 rounded-full bg-black/5" />
+            <div className="w-full md:w-[420px] lg:w-[460px] rounded-2xl border-2 border-black bg-white text-black p-6 md:p-8 space-y-5  overflow-hidden">
+              
 
-              <h2 className="title text-xl md:text-2xl mb-1 relative z-10">
+              <h2 className="title text-xl md:text-2xl mb-1  z-10">
                 Why I enjoy organizing events
               </h2>
-              <p className="Subtitle text-sm md:text-base relative z-10">
+              <p className="Subtitle text-sm md:text-base  z-10">
                 Events force you to think about the full experience &mdash;
                 from landing pages and registrations to schedules, judging, and
                 follow‑ups. It’s product thinking in a compressed timeline.
               </p>
-              <div className="flex items-center gap-2 text-xs md:text-sm text-neutral-700 relative z-10">
+              <div className="flex items-center gap-2 text-xs md:text-sm text-neutral-700  z-10">
                 <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
                 <span>Always open to help design or build event platforms</span>
               </div>

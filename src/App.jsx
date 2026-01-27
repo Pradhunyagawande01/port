@@ -13,7 +13,7 @@ export default function App() {
     <Router>
       <div>
         {/* Top navigation */}
-       <Navbar className="flex items-center justify-center" />
+       <Navbar  />
 
         {/* Page content */}
         <main className="flex-1">
