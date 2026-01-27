@@ -8,56 +8,58 @@ body {
 }
 
 .wrapper {
-  max-width:1400px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 1.80rem 1.5rem;
+  padding: 1.8rem 1.5rem;
 }
 
+/* Signature / accent text (buttons, small headings) */
 .Signature {
   font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-size: 1.5rem;
+  /* ~1.3rem on mobile → ~1.7rem on large screens */
+  font-size: clamp(1.25rem, 1.1rem + 0.4vw, 1.75rem);
 }
 
+/* Main headings (Hero titles, section titles you wrap in .title) */
 .title {
   font-family: "Oswald", sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 3.5rem;
-  /* text-align: center; */
-  margin-top: 2rem;
+  /* ~1.75rem on mobile → ~3rem on large screens */
+  font-size: clamp(1.75rem, 1.2rem + 1.4vw, 3rem);
+  line-height: 1.15;
 }
 
+/* Body / supporting text */
 .Subtitle {
   font-family: "Smooch Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  font-size: 1.4rem;
-  /* text-align: center; */
-  
+  /* ~0.95rem on mobile → ~1.25rem on large screens */
+  font-size: clamp(0.95rem, 0.85rem + 0.35vw, 1.25rem);
+  line-height: 1.5;
 }
 
+/* Secondary titles (section labels like “My Work!”, “My Achievements!”) */
 .title2 {
   font-family: "Shadows Into Light", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 3rem;
-  /* text-align: center; */
-  margin-top: 2rem;
-  margin-bottom: 5rem;
-  
+  text-align: center;
+  /* ~1.5rem on mobile → ~2.2rem on large screens */
+  font-size: clamp(1.5rem, 1.25rem + 0.65vw, 2.2rem);
 }
 
+/* Generic box component (unchanged) */
 .box {
   width: 620px;
   height: 300px;
   background-color: #d9d9d9;
-  /* padding: 20px; */
   display: inline-block;
   border-radius: 10px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-  /* gap: 50px; */
 }
