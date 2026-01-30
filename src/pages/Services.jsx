@@ -76,12 +76,12 @@ const Services = () => {
                 <h3 className="title text-lg">UI & Frontend Development</h3>
               </div>
               <p className="Subtitle text-sm">
-                Pixel‑perfect, responsive interfaces built with React and
+                Pixel perfect, responsive interfaces built with React and
                 Tailwind CSS. I turn static designs into fast, interactive
                 experiences.
               </p>
               <ul className="Subtitle text-sm space-y-1.5 list-disc list-inside">
-                <li>Single‑page apps (SPA)</li>
+                <li>Single page apps (SPA)</li>
                 <li>Landing pages & marketing sites</li>
                 <li>Dashboard / admin UIs</li>
               </ul>
@@ -101,9 +101,9 @@ const Services = () => {
                 usability.
               </p>
               <ul className="Subtitle text-sm space-y-1.5 list-disc list-inside">
-                <li>Mobile‑first design thinking</li>
+                <li>Mobile first design thinking</li>
                 <li>Adaptive components & grid systems</li>
-                <li>Accessibility‑aware interactions</li>
+                <li>Accessibility aware interactions</li>
               </ul>
             </div>
 
@@ -113,7 +113,7 @@ const Services = () => {
                 <div className="w-9 h-9 rounded-full bg-black text-white flex items-center justify-center">
                   <ShieldCheck size={18} />
                 </div>
-                <h3 className="title text-lg">Security‑Minded Builds</h3>
+                <h3 className="title text-lg">Security Minded Builds</h3>
               </div>
               <p className="Subtitle text-sm">
                 Basic cybersecurity practices integrated into frontend
@@ -139,7 +139,7 @@ const Services = () => {
                 improve loading, and clean up UI code.
               </p>
               <ul className="Subtitle text-sm space-y-1.5 list-disc list-inside">
-                <li>Core Web Vitals‑oriented improvements</li>
+                <li>Core Web Vitals     oriented improvements</li>
                 <li>Code splitting & lazy loading</li>
                 <li>Refactoring old components</li>
               </ul>

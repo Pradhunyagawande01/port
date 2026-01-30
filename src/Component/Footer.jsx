@@ -1,65 +1,39 @@
-import { Github, Linkedin, Globe, Twitter } from "lucide-react";
+import React from "react";
 
 export default function Footer() {
-  // const navLinks = [
-  //   { label: "Home", href: "/" },
-  //   { label: "Services", href: "/services" },
-  //   { label: "Skills", href: "/skills" },
-  //   { label: "Experience", href: "/experience" },
-  //   { label: "Events", href: "/events" },
-  //   { label: "Links", href: "/links" },
-  // ];
-
-  const socialLinks = [
-    { icon: Github, label: "GitHub", href: "https://github.com/Pradhunyagawande01", color: "hover:text-white" },
-    { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/pradhunya-gawande/", color: "hover:text-blue-700" },
-    { icon: Globe, label: "Website", href: "https://example.com", color: "hover:text-blue-500" },
-    { icon: Twitter, label: "Twitter", href: "https://x.com/pradhunya_patil", color: "hover:text-blue-400" },
-  ];
-
   return (
-    <footer className="w-full  mt-20">
-      <div className="p-6">
-        <div className=" ">
-          <div className="flex flex-col gap-8">
-            {/* Footer Top - Brand & Description */}
-            <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
-              <div className="flex flex-col gap-2">
-                <h3 className="Signature font-bold text-lg">Pradhunya Gawande</h3>
-                <p className=" Subtitle text-sm text-gray-700 max-w-xs">
-                  Crafting digital experiences with creativity and innovation.
-                </p>
-              </div>
+    <footer className="w-full mt-20">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-0">
+        {/* Top Border */}
+        <div className="border-t-2 border-black"></div>
 
-              {/* Social Links */}
-              <div className="flex items-center gap-4">
-                {socialLinks.map((social) => {
-                  const Icon = social.icon;
-                  return (
-                    <a
-                      key={social.label}
-                      href={social.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={social.label}
-                      className={`p-3 border-2 border-black rounded-full hover:bg-black transition-all duration-200 ${social.color}`}
-                    >
-                      <Icon size={20} />
-                    </a>
-                  );
-                })}
-              </div>
+        {/* Footer Content */}
+        <div className="py-10 md:py-14">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+            {/* Left - Brand & Tagline */}
+            <div className="flex flex-col items-center md:items-start gap-1">
+              <h3 className="Signature font-bold text-xl md:text-2xl">
+                Pradhunya Gawande
+              </h3>
+              <p className="Subtitle text-sm text-neutral-600">
+                Building things that matter.
+              </p>
             </div>
 
-            {/* Divider */}
-            <div className="border-t-2 border-black"></div>
+            {/* Center - Quote/Message */}
+            <div className="hidden md:block text-center">
+              <p className="Subtitle text-sm text-neutral-500 italic">
+                "Code is poetry, design is art."
+              </p>
+            </div>
 
-            {/* Footer Bottom - Links & Copyright */}
-            <div className="flex flex-col md:flex-row justify-center items-center gap-4">
-              
-
-              <p className="Subtitle">
-                © 2026 Pradhunya Gawande. All rights reserved.
+            {/* Right - Copyright */}
+            <div className="flex flex-col items-center md:items-end gap-1">
+              <p className="Subtitle text-sm text-neutral-600">
+                © {new Date().getFullYear()} All rights reserved.
+              </p>
+              <p className="text-xs text-neutral-400">
+                Made with ❤️ in India
               </p>
             </div>
           </div>

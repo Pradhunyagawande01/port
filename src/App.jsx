@@ -7,6 +7,8 @@ import Experience from "./pages/Experience";
 import Events from "./pages/Events";
 import Links from "./pages/Links";
 import Footer from "./Component/Footer";
+import H4B from "./Component/H4B";
+import CH from "./Component/CH";
 
 export default function App() {
   return (
@@ -24,6 +26,8 @@ export default function App() {
             <Route path="/experience" element={<Experience />} />
             <Route path="/events" element={<Events />} />
             <Route path="/links" element={<Links />} />
+            <Route path="/Hack4Brahma" element={<H4B />} />
+            <Route path="/CodeHunt" element={<CH />} />
           </Routes>
         </main>
 

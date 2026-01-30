@@ -9,45 +9,59 @@ import {
 
 const experiences = [
   {
-    type: "Internship",
-    role: "Frontend Developer Intern",
-    company: "Example Tech Co.",
-    period: "Jan 2024 – Apr 2024",
-    location: "Remote",
+    type: "Hackathon",
+    role: "Web Team Lead @Hack4Brahma",
+    company: "Hack4Brahma Hackathon",
+    period: "2025",
+    location: "Hybrid",
     description:
-      "Worked on building reusable components, fixing UI bugs, and integrating REST APIs into a production React application.",
+      "Led the web team for Hack4Brahma, owning everything from design and implementation to deployment and updates.",
     bullets: [
-      "Implemented responsive views for dashboard modules using React & Tailwind.",
-      "Improved page load performance by refactoring heavy components.",
-      "Collaborated with designers to match Figma designs pixel‑perfectly.",
+      "Architected and built the entire hackathon website, including registration, schedule, and information pages.",
+      "Handled deployments, DNS, and monitoring to keep the site stable during traffic spikes.",
+      "Coordinated with design, sponsorship, and operations teams to keep content up‑to‑date.",
     ],
   },
   {
-    type: "Freelance",
-    role: "Web Developer",
-    company: "Personal & Community Projects",
-    period: "2023 – Present",
-    location: "Remote",
+    type: "Hackathon",
+    role: "Web Team Lead @CodeHunt",
+    company: "CodeHunt Hackathon",
+    period: "2024",
+    location: "Online",
     description:
-      "Delivered end‑to‑end web experiences for student communities, hackathons, and personal brands.",
+      "Took end‑to‑end ownership of the CodeHunt hackathon website and mentored a small web team.",
     bullets: [
-      "Built landing pages and portfolios optimized for mobile.",
-      "Developed small dashboards and admin panels with React.",
-      "Handled deployment, DNS, and basic uptime monitoring.",
+      "Developed a responsive event site with clear flows for participants, mentors, and judges.",
+      "Implemented features like FAQs, timelines, and result announcements with reusable components.",
+      "Guided teammates on best practices in React, version control, and deployment workflows.",
     ],
   },
   {
-    type: "Campus",
-    role: "Tech Club / Hackathon Organizer",
-    company: "College & Local Communities",
-    period: "2022 – Present",
-    location: "On‑site & Remote",
+    type: "Meetup",
+    role: "Core Team Member @The Hackers Meetup Nagpur",
+    company: "Hackers Meetup Nagpur",
+    period: "2024",
+    location: "Nagpur, India",
     description:
-      "Organized and contributed to events like Hack4Brahma and CodeHunt, focusing on developer experience and event tooling.",
+      "Part of the core team behind Hackers Meetup Nagpur, helping shape sessions and community experience.",
     bullets: [
-      "Built registration sites and event pages for hackathons.",
-      "Managed judging dashboards and participant tracking tools.",
-      "Mentored juniors on Git, React, and project structure.",
+      "Helped plan and execute meetups around security, development, and open source.",
+      "Managed announcements and online presence for upcoming sessions.",
+      "Assisted speakers and attendees with demos, logistics, and follow‑ups.",
+    ],
+  },
+  {
+    type: "Community",
+    role: "Community Collaborator",
+    company: "Various Tech Communities",
+    period: "Ongoing",
+    location: "Remote & On‑site",
+    description:
+      "Worked with multiple student and developer communities to support events, websites, and technical content.",
+    bullets: [
+      "Collaborated on web platforms for clubs, communities, and hackathons.",
+      "Shared knowledge through informal sessions, code reviews, and helping juniors.",
+      "Continuously learning from diverse teams, tech stacks, and problem spaces.",
     ],
   },
 ];
@@ -66,18 +80,19 @@ const Experience = () => {
             </div>
 
             <h1 className="title text-3xl md:text-4xl lg:text-5xl">
-              A journey through code, community, and real projects
+              Leading web teams, building events, and growing communities
             </h1>
 
             <div className="Subtitle text-base md:text-lg space-y-4">
               <p>
-                My experience comes from a mix of internships, freelance work,
-                campus initiatives, and personal projects. I like learning by
-                building and shipping real things.
+                My experience comes from leading web teams at hackathons,
+                running event platforms, and being deeply involved in local and
+                online tech communities.
               </p>
               <p>
-                Below is a snapshot of where I’ve applied my skills so far, and
-                how those experiences shaped the way I build products today.
+                Below is a snapshot of where I’ve applied those skills and how
+                these roles shaped the way I build products and work with
+                teams.
               </p>
             </div>
           </div>
@@ -89,17 +104,17 @@ const Experience = () => {
                 What I care about at work
               </h2>
               <ul className="Subtitle text-sm md:text-base space-y-2.5 list-disc list-inside">
-                <li>Clear communication and ownership of tasks.</li>
+                <li>End‑to‑end ownership of frontend and deployment.</li>
+                <li>Clear communication and shared responsibility within the team.</li>
                 <li>Clean, readable code over “clever” hacks.</li>
-                <li>Feedback loops: code reviews and quick iterations.</li>
-                <li>Learning something new on every project.</li>
+                <li>Learning something new on every project and event.</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Timeline section */}
+      {/* Experience cards */}
       <div className="px-4 md:px-8 lg:px-0 py-12 md:py-20">
         <div className="max-w-7xl mx-auto space-y-10 md:space-y-14">
           <div className="flex flex-col md:flex-row md:justify-between md:items-end gap-2">
@@ -107,87 +122,64 @@ const Experience = () => {
               Experience
             </h2>
             <p className="Subtitle text-sm md:text-base text-neutral-700 max-w-lg">
-              Roles and projects where I’ve applied React, modern frontend
-              tooling, and my interest in security.
+              Web‑team leadership, hackathon platforms, meetups, and community
+              collaborations.
             </p>
           </div>
 
-          {/* Timeline layout */}
-          <div className="">
-            {/* Vertical line on desktop */}
-            <div className="hidden md:block left-1/2 top-0 bottom-0 w-px bg-black/20" />
-
-            <div className="space-y-8 md:space-y-10">
-              {experiences.map((exp, index) => {
-                const isLeft = index % 2 === 0;
-
-                return (
-                  <div
-                    key={exp.role + exp.company}
-                    className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-stretch"
-                  >
-                    {/* Spacer column to alternate sides */}
-                    <div
-                      className={`hidden md:block ${
-                        isLeft ? "" : "order-2"
-                      }`}
-                    />
-
-                    {/* Card */}
-                    <div
-                      className={` rounded-2xl border-2 border-black bg-white text-black p-6 md:p-7 flex flex-col gap-3 md:gap-4 ${
-                        isLeft ? "" : "md:order-1"
-                      }`}
-                    >
-                      {/* Dot on timeline (desktop) */}
-                      <div className="hidden md:block absolute -left-4 top-8 w-3 h-3 rounded-full bg-black" />
-
-                      <div className="flex items-center justify-between gap-3">
-                        <div className="flex items-center gap-2">
-                          <div className="w-8 h-8 rounded-full bg-black text-white flex items-center justify-center">
-                            {index === 0 ? (
-                              <Briefcase size={16} />
-                            ) : index === 1 ? (
-                              <Briefcase size={16} />
-                            ) : (
-                              <GraduationCap size={16} />
-                            )}
-                          </div>
-                          <div>
-                            <p className="title text-base md:text-lg">
-                              {exp.role}
-                            </p>
-                            <p className="Subtitle text-xs md:text-sm text-neutral-700">
-                              {exp.company}
-                            </p>
-                          </div>
-                        </div>
-                        <div className="text-right text-[11px] md:text-xs text-neutral-600 space-y-1">
-                          <p className="flex items-center justify-end gap-1">
-                            <Clock size={14} />
-                            <span>{exp.period}</span>
-                          </p>
-                          <p className="flex items-center justify-end gap-1">
-                            <MapPin size={14} />
-                            <span>{exp.location}</span>
-                          </p>
-                        </div>
-                      </div>
-
-                      <p className="Subtitle text-sm md:text-base">
-                        {exp.description}
+          {/* Card grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+            {experiences.map((exp) => (
+              <div
+                key={exp.role + exp.company}
+                className="group rounded-2xl border-2 border-black bg-white text-black p-6 md:p-7 flex flex-col gap-4 hover:shadow-[0_10px_25px_rgba(0,0,0,0.35)]"
+              >
+                {/* Header: type + period/location */}
+                <div className="flex items-start justify-between gap-3">
+                  <div className="flex items-center gap-3">
+                    <div className="w-9 h-9 rounded-full bg-black text-white flex items-center justify-center">
+                      {exp.type === "Meetup" || exp.type === "Community" ? (
+                        <GraduationCap size={18} />
+                      ) : (
+                        <Briefcase size={18} />
+                      )}
+                    </div>
+                    <div>
+                      <p className="Subtitle text-[11px] uppercase tracking-[0.18em] text-neutral-500">
+                        {exp.type}
                       </p>
-
-                      <ul className="Subtitle text-xs md:text-sm space-y-1.5 list-disc list-inside">
-                        {exp.bullets.map((item) => (
-                          <li key={item}>{item}</li>
-                        ))}
-                      </ul>
+                      <p className="title text-base md:text-lg">
+                        {exp.role}
+                      </p>
+                      <p className="Subtitle text-xs md:text-sm text-neutral-700">
+                        {exp.company}
+                      </p>
                     </div>
                   </div>
-                );
-              })}
-            </div>
+                  {/* <div className="text-right text-[10px] md:text-xs text-neutral-600 space-y-1">
+                    <p className="flex justify-end gap-1">
+                      <span>{exp.period}</span>
+                    </p>
+                    <p className="flex justify-end gap-1">
+                      <MapPin size={14} />
+                      <span>{exp.location}</span>
+                    </p>
+                  </div> */}
+                </div>
+
+                {/* Description */}
+                <p className="Subtitle text-sm md:text-base">
+                  {exp.description}
+                </p>
+
+                {/* Bullets */}
+                <ul className="Subtitle text-xs md:text-sm space-y-1.5 list-disc list-inside">
+                  {exp.bullets.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
 
           {/* CTA */}
@@ -197,15 +189,15 @@ const Experience = () => {
                 Want to know more about my work?
               </h3>
               <p className="Subtitle text-sm md:text-base">
-                I’m happy to walk you through specific projects, code samples,
-                and decisions I made while building them.
+                I’d be happy to walk you through the Hack4Brahma and CodeHunt
+                websites, or community collaborations.
               </p>
             </div>
             <a
-              href="#contact" // or your actual contact route / section
+              href="/events" // or your actual contact / projects route
               className="Signature group inline-flex items-center justify-center gap-2 rounded-full border border-black/40 px-6 py-2.5 text-sm font-medium bg-black text-white hover:bg-white hover:text-black transition-all duration-300"
             >
-              View Projects
+              
               <ArrowRight
                 size={16}
                 className="transition-transform duration-300 group-hover:translate-x-1"
