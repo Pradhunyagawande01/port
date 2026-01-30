@@ -68,7 +68,7 @@ const Hack4BrahmaPage = () => {
             {/* Text */}
             <div className="space-y-5 md:space-y-6">
               <h1 className="title text-3xl md:text-4xl lg:text-5xl">
-                Organizing Hack4Brahma – Northeast India&apos;s Biggest
+               Hack4Brahma – Northeast India&apos;s Biggest
                 Hackathon
               </h1>
 
