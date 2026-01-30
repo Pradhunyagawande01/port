@@ -230,7 +230,7 @@ const Events = () => {
               the platform, or just brainstorming ideas — let's connect!
             </p>
             <a
-              href="/contact"
+              href="/links"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-black font-medium text-sm hover:bg-neutral-200 transition-colors"
             >
               Get in touch
