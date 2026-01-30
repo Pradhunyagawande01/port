@@ -48,7 +48,7 @@ const Home = () => {
       <section className="px-4 md:px-8 lg:px-0 py-10 md:py-16">
         <div className="max-w-7xl mx-auto">
           <div className="mb-8 md:mb-10">
-            <h2 className="title2 !text-2xl md:!text-3xl underline">
+            <h2 className="title2 !text-2xl md:!text-3xl">
               My Work!
             </h2>
           </div>
@@ -59,7 +59,7 @@ const Home = () => {
             <div className="rounded-2xl border-2 border-black overflow-hidden bg-white">
               <div className="w-full h-64">
                 <img
-                  src="/h4b.jpg"
+                  src="/hbhh.png"
                   alt="Hack4Brahma hackathon"
                   className="w-full h-full object-cover"
                   loading="lazy"
@@ -90,7 +90,7 @@ const Home = () => {
             <div className="rounded-2xl border-2 border-black overflow-hidden bg-white">
               <div className="w-full h-64">
                 <img
-                  src="/CH.jpg"
+                  src="/CH.png"
                   alt="CodeHunt hackathon"
                   className="w-full h-full object-cover"
                   loading="lazy"
@@ -122,7 +122,7 @@ const Home = () => {
             {/* Hack4Brahma Image */}
             <div className="rounded-4xl col-start-4 row-start-1 col-span-3 row-span-3 overflow-hidden bg-white border-2 border-black">
               <img
-                src="/h4b.jpg"
+                src="/hbhh.png"
                 alt="Hack4Brahma hackathon"
                 className="w-full h-full object-cover"
                 loading="lazy"
@@ -181,7 +181,7 @@ const Home = () => {
             {/* CodeHunt Image */}
             <div className="rounded-4xl col-start-1 row-start-4 col-span-3 row-span-3 overflow-hidden bg-white border-2 border-black">
               <img
-                src="/CH.jpg"
+                src="/CH.png"
                 alt="CodeHunt hackathon"
                 className="w-full h-full object-cover"
                 loading="lazy"
@@ -196,7 +196,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto">
           {/* Heading */}
           <div className="flex flex-col items-center mb-8 md:mb-10">
-            <h2 className="title2 !text-2xl md:!text-3xl underline text-center">
+            <h2 className="title2 !text-2xl md:!text-3xl text-center">
               My Achievements!
             </h2>
             <p className="Subtitle !text-xs md:!text-lg text-black mt-2 text-center max-w-xl">
@@ -223,7 +223,7 @@ const Home = () => {
               {/* Text side */}
               <div className="p-6 md:p-8 flex flex-col justify-center gap-4">
                 <div>
-                  <h3 className="title2 !text-xl md:!text-4xl underline mb-1">
+                  <h3 className="title2 !text-xl md:!text-4xl mb-1">
                     Hackathon Winner
                   </h3>
                   <p className="title !text-xs md:!text-xl text-neutral-700">
@@ -246,7 +246,7 @@ const Home = () => {
                 {/* View details button */}
                 <div className="mt-2">
                   <a
-                    href="/events" // change to specific event route if you have one
+                    href="/Winner" // change to specific event route if you have one
                     className="Signature group inline-flex items-center gap-2 rounded-full border border-black/30 px-5 py-2 text-sm font-medium bg-black text-white hover:bg-white hover:text-black transition-all duration-300"
                   >
                     View event details

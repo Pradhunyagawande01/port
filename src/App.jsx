@@ -9,6 +9,7 @@ import Links from "./pages/Links";
 import Footer from "./Component/Footer";
 import H4B from "./Component/H4B";
 import CH from "./Component/CH";
+import AIOdyssey from "./Component/AIOdyssey";
 
 export default function App() {
   return (
@@ -28,6 +29,7 @@ export default function App() {
             <Route path="/links" element={<Links />} />
             <Route path="/Hack4Brahma" element={<H4B />} />
             <Route path="/CodeHunt" element={<CH />} />
+            <Route path="/Winner" element={<AIOdyssey />} />
           </Routes>
         </main>
 

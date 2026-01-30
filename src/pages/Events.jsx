@@ -21,7 +21,7 @@ const events = [
       "Student-led hackathon focused on solving real problems with modern tech.",
     description:
       "A 24 hour hackathon where students build and ship prototypes around themes like education, sustainability, and developer tools.",
-    link: "/H4B",
+    link: "/Hack4Brahma",
   },
   {
     slug: "codehunt",
@@ -35,7 +35,7 @@ const events = [
       "Community-driven hackathon for builders, designers, and innovators.",
     description:
       "CodeHunt brought together developers from different campuses to collaborate remotely, with tracks for web, AI, and security. Successfully organized with 120+ participants and 25+ project submissions.",
-    link: "/CH",
+    link: "/CodeHunt",
   },
 ];
 
