@@ -195,7 +195,7 @@ const Services = () => {
               </p>
             </div>
             <a
-              href="#contact" // or your actual contact route/section
+              href="/links" // or your actual contact route/section
               className="Signature group inline-flex items-center justify-center gap-2 rounded-full border border-black/40 px-6 py-2.5 text-sm font-medium bg-black text-white hover:bg-white hover:text-black transition-all duration-300"
             >
               Let’s Build Something
