@@ -220,18 +220,18 @@ const Events = () => {
       {/* CTA Section */}
       <div className="px-4 md:px-8 lg:px-0 pb-16 md:pb-24">
         <div className="max-w-7xl mx-auto">
-          <div className="rounded-2xl border-2 border-black bg-black text-white p-8 md:p-12 text-center">
+          <div className="rounded-2xl border-2 border-black bg-white text-black p-8 md:p-12 text-center">
             <h3 className="title text-2xl md:text-3xl mb-4">
               Want to collaborate on an event?
             </h3>
-            <p className="Subtitle text-sm md:text-base text-neutral-300 max-w-2xl mx-auto mb-6">
+            <p className="Subtitle text-sm md:text-base text-black max-w-2xl mx-auto mb-6">
               I'm always excited to help organize hackathons, workshops, and
               developer meetups. Whether you need help with planning, building
               the platform, or just brainstorming ideas — let's connect!
             </p>
             <a
               href="/links"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-black font-medium text-sm hover:bg-neutral-200 transition-colors"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-amber-200 text-black font-medium text-sm hover:bg-neutral-200 transition-colors"
             >
               Get in touch
               <ArrowRight size={16} />
