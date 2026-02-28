@@ -46,9 +46,9 @@ This portfolio represents:
 
 ## 🤝 Connect With Me
 
-* LinkedIn: *Add your link*
-* GitHub: *Add your link*
-* Email: *Add your email*
+* LinkedIn: *https://www.linkedin.com/in/pradhunya-gawande-9a61a3304/*
+* GitHub: *https://github.com/Pradhunyagawande01*
+* Email: *pradhunyagawande@gmail.com*
 
 ---
 
