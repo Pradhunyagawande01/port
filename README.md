@@ -33,23 +33,6 @@ I build fast, modern, and scalable web applications with a strong focus on respo
 
 ---
 
-## 📂 Project Structure
-
-```
-portfolio/
-│
-├── public/
-├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── assets/
-│   └── App.jsx
-│
-├── index.html
-├── package.json
-└── README.md
-```
-
 ## 🎯 Purpose of This Portfolio
 
 This portfolio represents:
